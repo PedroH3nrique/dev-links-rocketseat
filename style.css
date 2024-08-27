@@ -11,7 +11,7 @@
 
 :root{
     --text-color:#fff;
-    --bg-url: url(assets/bg-desktop.jpg);
+    --bg-url: url(assets/bg-desktop.jpg); /*black*/
     --stroke-color: rgba(255, 255, 255, 0.5);  /*--stroke-color*/
     --surface-color: rgba(255, 255, 255, 0.05); /*--surface-color*/
     --surface-color-hover: rgba(0, 0, 0, 0.02);  /*--surface-color-hover*/
@@ -21,7 +21,7 @@
 
 .light {
     --text-color: black;
-    --bg-url: url(assets/bg-desktop-light.jpg);
+    --bg-url: url(assets/bg-desktop-light.jpg);/*light*/
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02) ;
@@ -171,5 +171,16 @@ footer a {
     color: var(--text-color);
     text-decoration: none;
     border-bottom: 2px solid var(--text-color);
+}
 
+
+/*media queries*/
+@media (min-width:700px){
+    :root{
+        --bg-url: url(assets/bg-desktop.jpg); /*black*/
+    }
+
+    .light{
+        --bg-url: url(assets/bg-desktop-light.jpg); /*black*/
+    }
 }
